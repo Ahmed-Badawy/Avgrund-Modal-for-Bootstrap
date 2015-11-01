@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Avgrund - A modal UI concept</title>
+
+		<meta name="description" content="A modal concept which aims to give a sense of depth between the page and modal layers">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="viewport" content="width=800, user-scalable=no">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+		<link rel="stylesheet" href="avgrund.css">
+		<script type="text/javascript" src="avgrund.js"></script>
+
+		<script>
+			function openDialog() {
+				Avgrund.show( "#default-popup" );
+			}
+			function closeDialog() {
+				Avgrund.hide();
+			}
+		</script>
+
+
+	</head>
+
+	<body>
+
+		<aside id="default-popup" class="avgrund-popup col-sm-6 col-sm-offset-3">
+			<h2>That's all, folkssssss</h2>
+			<p>
+				You can hit ESC or click outside to close the modal. Give it a go to see the reverse transition.
+			</p>
+			<p>
+				If you like this you would probably enjoy <a href="http://lab.hakim.se/meny">Meny</a>, <a href="http://lab.hakim.se/reveal-js">reveal.js</a> and <a href="http://lab.hakim.se/scroll-effects">stroll.js</a>.
+			</p>
+			<button onclick="javascript:closeDialog();">Close</button>
+
+			<br>
+			<div class="clearfix"></div>
+		</aside>
+
+
+
+<div class='avgrund-contents col-sm-10 col-sm-offset-1'>
+		<article class="" dir='rtl'>
+			<h1>Avgrund</h1>
+			<h2>تم التعديل على الكود و التصميم ليعمل مع الـ bootstrap</h2>
+
+			<button onclick="javascript:openDialog();" class='btn btn-primary'>Open Avgrund</button>
+		</article>	
+		<div class="avgrund-cover" onclick="javascript:closeDialog();"></div>
+</div>
+
+
+
+
+
+
+
+
+	</body>
+</html>
